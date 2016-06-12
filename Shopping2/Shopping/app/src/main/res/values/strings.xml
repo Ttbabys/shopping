@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="username">用户名：</string>
+    <string name="secret">密码：</string>
+    <string name="login">登录</string>
+    <string name="Secret">密码：</string>
+    <string name="Phone">手机号码：</string>
+    <string name="Mail">邮箱：</string>
+    <string name="Back">返回</string>
+    <string name="Exit">退出</string>
+    <string name="Save">保存</string>
+    <string name="Shop">商店名称：</string>
+    <string name="mainUser">用户</string>
+    <string name="mainShop">商家</string>
+    <string name="Register">注册</string>
+    <drawable name="bkcolor">#0098ff</drawable>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_slide">SlideActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_aboutUS">关于我们</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">广商百货</string>
+    <string name="android_studio">Enjoy Your Life!</string>
+    <string name="_1_codinggarfield">商软1班@CodingGarfield</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alterShopIM">修改商家信息</string>
+    <string name="alterShopName">用户名：</string>
+    <string name="alterShopPW">密码：</string>
+    <string name="alterShopPhone">手机号码：</string>
+    <string name="alterShopMail">邮箱：</string>
+    <string name="alterShop">商店名称：</string>
+    <string name="returnIn">返回</string>
+    <string name="saveAlter">保存修改</string>
+    <string name="alterUserIM">修改用户信息</string>
+    <string name="alterUserName">用户名：</string>
+    <string name="alterUserPW">密码：</string>
+    <string name="alterUserPhone">手机号码：</string>
+    <string name="alterUserMail">邮箱：</string>
+    <string name="lookShopName">用户名：</string>
+    <string name="lookShopIM">商家保留的信息</string>
+    <string name="lookShopPW">密码：</string>
+    <string name="lookShopPhone">手机号码：</string>
+    <string name="lookShopMail">邮箱：</string>
+    <string name="lookShop">商店名称：</string>
+    <string name="alter">修改</string>
+    <string name="lookUserIM">用户保留的信息</string>
+    <string name="lookUserName">用户名：</string>
+    <string name="lookUserPW">密码：</string>
+    <string name="lookUserPhone">手机号码：</string>
+    <string name="lookUserMail">邮箱：</string>
+    <string name="nav_image_description">nav_Image_Description</string>
+
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gzcc.CodingGarfield.shopping.AlterBusinessInformation">
+
+    <TextView
+        android:textSize="23sp"
+        android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/alterShopIM"
+        android:id="@+id/textView25"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/alterShopName"
+        android:textSize="20sp"
+        android:id="@+id/textView26"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView25"
+        android:layout_alignRight="@+id/textView28"
+        android:layout_alignEnd="@+id/textView28" />
+
+    <TextView android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/alterShopPW"
+        android:textSize="20sp"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_toLeftOf="@+id/alterbusinessemail"
+        android:layout_toStartOf="@+id/alterbusinessemail"
+        android:layout_marginTop="37dp" />
+
+    <TextView android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/alterShopPhone"
+        android:textSize="20sp"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/alterbusinesspassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/alterShopMail"
+        android:textSize="20sp"
+        android:id="@+id/textView29"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView28"
+        android:layout_alignRight="@+id/textView28"
+        android:layout_alignEnd="@+id/textView28" />
+
+    <TextView android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/alterShop"
+        android:textSize="20sp"
+        android:id="@+id/textView30"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView29"
+        android:layout_toLeftOf="@+id/alterbusinesspassword"
+        android:layout_toStartOf="@+id/alterbusinesspassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/alterbusinesspassword"
+        android:layout_alignBaseline="@+id/textView27"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27"
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textSize="20sp"
+        android:id="@+id/alterbusinessname"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/alterbusinessnumber"
+        android:layout_alignBaseline="@+id/textView28"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignLeft="@+id/alterbusinessemail"
+        android:layout_alignStart="@+id/alterbusinessemail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/alterbusinessemail"
+        android:layout_alignBaseline="@+id/textView29"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alterbusinessshopname"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_toRightOf="@+id/textView30"
+        android:layout_toEndOf="@+id/textView30" />
+
+    <Button
+        android:textColor="@color/ThemeColor"
+        android:background="@color/ButtonColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        android:id="@+id/alterbusinessback"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:textColor="@color/ThemeColor"
+        android:background="@color/ButtonColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveAlter"
+        android:id="@+id/alterbusinessinformation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

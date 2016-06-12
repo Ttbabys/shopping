@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bkcolor"
+    tools:context="com.gzcc.CodingGarfield.shopping.RegisterActivity">
+
+    <TextView         android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/back"
+        android:layout_toLeftOf="@+id/username2"
+        android:layout_toStartOf="@+id/username2" />
+
+    <EditText
+        android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/username2"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:inputType="none" />
+
+    <TextView         android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Secret"
+        android:id="@+id/secret"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/username2"
+        android:layout_toLeftOf="@+id/password"
+        android:layout_toStartOf="@+id/password" />
+
+    <EditText
+        android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:password="true"
+        android:layout_alignBaseline="@+id/secret"
+        android:layout_alignBottom="@+id/secret"
+        android:layout_alignLeft="@+id/phonenumber"
+        android:layout_alignStart="@+id/phonenumber" />
+
+    <TextView         android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Phone"
+        android:id="@+id/text2"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phonenumber"
+        android:layout_alignBaseline="@+id/text2"
+        android:layout_alignBottom="@+id/text2"
+        android:layout_toRightOf="@+id/text2"
+        android:layout_toEndOf="@+id/text2" />
+
+    <TextView         android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Mail"
+        android:id="@+id/textView4"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_toLeftOf="@+id/email"
+        android:layout_toStartOf="@+id/email" />
+
+    <EditText android:textColor="@color/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/phonenumber"
+        android:layout_alignStart="@+id/phonenumber" />
+
+    <Button android:background="@color/ButtonColor"         android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        android:id="@+id/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="back"/>
+
+    <Button android:background="@color/ButtonColor"         android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Exit"
+        android:id="@+id/exit"
+        android:layout_alignBottom="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="exit"/>
+
+    <Button
+        android:background="@color/ButtonColor"
+        android:textColor="@color/ThemeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:id="@+id/save"
+        android:onClick="login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_alignStart="@+id/exit" />
+
+</RelativeLayout>
