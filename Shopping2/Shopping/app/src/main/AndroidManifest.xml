@@ -49,7 +49,6 @@
         <activity
             android:name=".AboutActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".SelectHeadActivity"></activity>
     </application>
 
 </manifest>
