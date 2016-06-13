@@ -3,10 +3,16 @@ package com.gzcc.CodingGarfield.shopping;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,10 +22,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import me.majiajie.pagerbottomtabstrip.Controller;
 import me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout;
@@ -31,6 +48,7 @@ public class Main3Activity extends AppCompatActivity
 
 
     private Tab1Fragment POF;
+    private Tab2Fragment POF2;
     private Tab3Fragment POF3;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -39,6 +57,8 @@ public class Main3Activity extends AppCompatActivity
     private GoogleApiClient client;
 
 
+
+    String headimagefile = "/gzccShopping/head.jpg";
 
     Controller CON;
 
@@ -56,6 +76,8 @@ public class Main3Activity extends AppCompatActivity
                     break;
                 case 1:
                    // Toast.makeText(getApplicationContext(), "2", Toast.LENGTH_LONG).show();
+                    POF2=new Tab2Fragment();
+                    transaction.replace(R.id.id_content,POF2);
                     break;
                 case 2:
                   //  Toast.makeText(getApplicationContext(), "3", Toast.LENGTH_LONG).show();
@@ -84,6 +106,7 @@ public class Main3Activity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         setDefaultFrament();
 
         PagerBottomTabLayout bottomTabLayout = (PagerBottomTabLayout) findViewById(R.id.tab);
@@ -93,6 +116,7 @@ public class Main3Activity extends AppCompatActivity
                 .addTabItem(android.R.drawable.ic_menu_search, "搜索", Color.rgb(255, 130, 150))
                 .addTabItem(android.R.drawable.ic_menu_edit, "个人资料", Color.rgb(250, 128, 10))
                 .build();
+
 
         CON.addTabItemClickListener(TISL);
 
@@ -104,6 +128,9 @@ public class Main3Activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -154,6 +181,8 @@ public class Main3Activity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -161,7 +190,7 @@ public class Main3Activity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_manage) {
@@ -174,8 +203,6 @@ public class Main3Activity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -227,4 +254,8 @@ public class Main3Activity extends AppCompatActivity
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
     }
+
+
+
+
 }

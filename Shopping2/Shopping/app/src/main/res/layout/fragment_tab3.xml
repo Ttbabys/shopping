@@ -9,17 +9,38 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal|bottom">
-        <TextView android:textColor="@color/ThemeColor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/alterUserIM"
-            android:textSize="23sp"
-            android:id="@+id/textView20"
-            android:layout_marginBottom="50dp"
-            android:layout_above="@+id/alterusername"
-            android:layout_centerHorizontal="true" />
+        android:layout_gravity="left|bottom">
+        <ImageView
+            android:id="@+id/imageID"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/textView21"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:textColor="@color/ThemeColor"
+            android:background="@color/ButtonColor"
+            android:id="@+id/btn_01"
+            android:layout_width="192dip"
+            android:layout_weight="1"
+            android:layout_height="50dip"
+            android:text="相册"
+            android:layout_alignBaseline="@+id/btn_02"
+            android:layout_alignBottom="@+id/btn_02"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:textColor="@color/ThemeColor"
+            android:background="@color/ButtonColor"
+            android:id="@+id/btn_02"
+            android:layout_width="192dip"
+            android:layout_height="50dip"
+            android:text="拍照"
+            android:layout_above="@+id/alteruserinformation"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <TextView android:textColor="@color/ThemeColor"
             android:textSize="17sp"
@@ -28,21 +49,19 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/alterUserName"
             android:id="@+id/textView21"
-            android:layout_marginBottom="18dp"
             android:layout_above="@+id/alteruserpassword"
-            android:layout_toLeftOf="@+id/textView20"
-            android:layout_toStartOf="@+id/textView20" />
+            android:layout_toLeftOf="@+id/alterusername"
+            android:layout_toStartOf="@+id/alterusername" />
 
         <TextView
-            android:textSize="17sp"
+            android:textSize="19sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
             android:id="@+id/alterusername"
             android:layout_alignTop="@+id/textView21"
-            android:layout_toRightOf="@+id/textView21"
-            android:layout_toEndOf="@+id/textView21" />
+            android:layout_centerHorizontal="true" />
 
         <TextView android:textColor="@color/ThemeColor"
             android:textSize="17sp"
@@ -51,10 +70,9 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/alterUserPW"
             android:id="@+id/textView22"
-            android:layout_marginBottom="26dp"
             android:layout_above="@+id/alterusernumber"
-            android:layout_alignRight="@+id/textView21"
-            android:layout_alignEnd="@+id/textView21" />
+            android:layout_toLeftOf="@+id/alterusername"
+            android:layout_toStartOf="@+id/alterusername" />
 
         <EditText android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"
@@ -73,11 +91,10 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/alterUserPhone"
-            android:layout_marginBottom="21dp"
             android:id="@+id/textView23"
             android:layout_above="@+id/alteruseremail"
-            android:layout_toLeftOf="@+id/alterusernumber"
-            android:layout_toStartOf="@+id/alterusernumber" />
+            android:layout_toLeftOf="@+id/alteruserpassword"
+            android:layout_toStartOf="@+id/alteruserpassword" />
 
         <EditText android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"
@@ -97,8 +114,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/alterUserMail"
             android:id="@+id/textView24"
-            android:layout_marginBottom="30dp"
-            android:layout_above="@+id/alteruserinformation"
+            android:layout_marginBottom="11dp"
+            android:layout_above="@+id/btn_02"
             android:layout_toLeftOf="@+id/alterusernumber"
             android:layout_toStartOf="@+id/alterusernumber" />
 
@@ -123,7 +140,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="23dp"
+            android:layout_marginBottom="15dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 

@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bkcolor"
+    android:background="@drawable/loginbg"
     tools:context="com.gzcc.CodingGarfield.shopping.RegisterActivity">
 
     <TextView         android:textColor="@color/TextColor"
@@ -16,10 +16,10 @@
         android:text="@string/username"
         android:textSize="20sp"
         android:id="@+id/textView3"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="60dp"
         android:layout_below="@+id/back"
-        android:layout_toLeftOf="@+id/username2"
-        android:layout_toStartOf="@+id/username2" />
+        android:layout_alignRight="@+id/secret"
+        android:layout_alignEnd="@+id/secret" />
 
     <EditText
         android:textColor="@color/TextColor"
@@ -39,7 +39,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/Secret"
         android:id="@+id/secret"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="38dp"
         android:textSize="20sp"
         android:layout_below="@+id/username2"
         android:layout_toLeftOf="@+id/password"
@@ -87,11 +87,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/Mail"
         android:id="@+id/textView4"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="33dp"
         android:textSize="20sp"
         android:layout_below="@+id/phonenumber"
-        android:layout_toLeftOf="@+id/email"
-        android:layout_toStartOf="@+id/email" />
+        android:layout_alignLeft="@+id/secret"
+        android:layout_alignStart="@+id/secret" />
 
     <EditText android:textColor="@color/TextColor"
         android:layout_width="wrap_content"

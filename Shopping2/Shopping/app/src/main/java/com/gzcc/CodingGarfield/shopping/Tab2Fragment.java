@@ -3,7 +3,7 @@ package com.gzcc.CodingGarfield.shopping;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +12,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Tab2Fragmen.OnFragmentInteractionListener} interface
+ * {@link Tab2Fragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Tab2Fragmen#newInstance} factory method to
+ * Use the {@link Tab2Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Tab2Fragmen extends Fragment {
+public class Tab2Fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +29,7 @@ public class Tab2Fragmen extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Tab2Fragmen() {
+    public Tab2Fragment() {
         // Required empty public constructor
     }
 
@@ -39,11 +39,11 @@ public class Tab2Fragmen extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Tab2Fragmen.
+     * @return A new instance of fragment Tab2Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Tab2Fragmen newInstance(String param1, String param2) {
-        Tab2Fragmen fragment = new Tab2Fragmen();
+    public static Tab2Fragment newInstance(String param1, String param2) {
+        Tab2Fragment fragment = new Tab2Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
