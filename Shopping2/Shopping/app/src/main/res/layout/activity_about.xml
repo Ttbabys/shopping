@@ -7,10 +7,20 @@
         android:id="@+id/versionNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="                              Version 1.2
-        Make By CodingGarfield"
+        android:text="@string/make_by_codinggarfield"
         android:textColor="#FFFFFF"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Version 1.2"
+        android:id="@+id/textView9"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/versionNumber"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>

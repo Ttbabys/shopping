@@ -1,17 +1,28 @@
 package com.gzcc.CodingGarfield.shopping;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
+import android.widget.Toast;
+
+import com.gzcc.CodingGarfield.shopping.Finaldb_dbclass.Login;
+
+import net.tsz.afinal.FinalActivity;
+import net.tsz.afinal.FinalDb;
+
+import java.util.List;
+
 //欢迎界面
 @SuppressLint("HandlerLeak")
-public class SplashActivity extends Activity{
+public class SplashActivity extends FinalActivity {
 
-    private static final String S = "MainActivity";
+
+
+    String Status="offline";
+    private static final String S = "LoginIntoActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
@@ -19,6 +30,20 @@ public class SplashActivity extends Activity{
         requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         setContentView(R.layout.splash);
         //启动线程
+
+        FinalDb finalDb = FinalDb.create(this);
+        List<Login> list=finalDb.findAll(Login.class);
+        if (list.size()!=0)
+        {
+            Status = list.get(0).getStatus();//判断是否online
+        }
+
+        if("online".equals(Status)) {
+            Toast.makeText(getApplicationContext(), "自动登陆", Toast.LENGTH_LONG).show();
+        }
+        else if("offline".equals(Status)){
+            Toast.makeText(getApplicationContext(), "跳转登陆", Toast.LENGTH_LONG).show();
+        }
         Thread mt = new Thread(mThread);
         mt.start();
     }
@@ -33,10 +58,19 @@ public class SplashActivity extends Activity{
 
             if((String)msg.obj == S) {
                 //跳转
-                Intent intent = new Intent();
-                intent.setClass(SplashActivity.this,MainActivity.class);
-                SplashActivity.this.startActivity(intent);
-                finish();
+
+                if ("online".equals(Status)) {
+                    Intent intent = new Intent();
+                    intent.setClass(SplashActivity.this, MainShoppingActivity.class);
+                    SplashActivity.this.startActivity(intent);
+                    finish();
+                }
+                else {
+                    Intent intent = new Intent();
+                    intent.setClass(SplashActivity.this, LoginIntoActivity.class);
+                    SplashActivity.this.startActivity(intent);
+                    finish();
+                }
             }
         }
     };

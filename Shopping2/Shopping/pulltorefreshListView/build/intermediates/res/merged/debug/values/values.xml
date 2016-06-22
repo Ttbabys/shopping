@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="colors">
+        <item>0xffc682</item>
+        <item>0xffd196</item>
+        <item>0xffddaf</item>
+        <item>0xffeac8</item>
+        <item>0xfff7e2</item>
+        <item>0xffefdb</item>
+        <item>0xffefdb</item>
+        <item>0xffc1b0</item>
+        <item>0xffa798</item>
+        <item>0xeff2dd</item>
+        <item>0xd9eab6</item>
+        <item>0xc4e29d</item>
+        <item>0x97d267</item>
+        <item>0xbbe5f9</item>
+        <item>0xbbe5f9</item>
+        <item>0xf2fafe</item>
+    </integer-array>
+    <color name="secondary_text">#ff999999</color>
+    <color name="solid_white">#ffffffff</color>
+    <dimen name="badge_spacing">3.0dip</dimen>
+    <dimen name="bounceTravelDistance">5.0dip</dimen>
+    <dimen name="button_padding">8.0dip</dimen>
+    <dimen name="card_inset">10.0dip</dimen>
+    <dimen name="chevron_padding">5.0dip</dimen>
+    <dimen name="divider_thickness">1.0dip</dimen>
+    <dimen name="font_size_default">14.0sp</dimen>
+    <dimen name="font_size_large">16.0sp</dimen>
+    <dimen name="font_size_small">12.0sp</dimen>
+    <dimen name="font_size_xsmall">10.0sp</dimen>
+    <dimen name="icon_spacing">4.0dip</dimen>
+    <dimen name="image_margin_right">6.0dip</dimen>
+    <dimen name="image_margin_top">2.0dip</dimen>
+    <dimen name="inline_map_height">100.0dip</dimen>
+    <dimen name="list_preferred_height">44.0dip</dimen>
+    <dimen name="list_row_padding">10.0dip</dimen>
+    <dimen name="map_height">150.0dip</dimen>
+    <dimen name="mini_user_image_size">32.0dip</dimen>
+    <dimen name="onebox_news_image">60.0dip</dimen>
+    <dimen name="photo_attachment_size">72.0dip</dimen>
+    <dimen name="reply_to_height">28.0dip</dimen>
+    <dimen name="standard_spacing">5.0dip</dimen>
+    <dimen name="tap_to_refresh_height">64.0dip</dimen>
+    <dimen name="text_single_line_height">18.0sp</dimen>
+    <dimen name="toolbar_button_width">160.0dip</dimen>
+    <dimen name="user_image_size">48.0dip</dimen>
+    <dimen name="widget_header_height">44.0dip</dimen>
+    <integer name="bounceAnimTime">120</integer>
+    <integer name="full_name_max_length">20</integer>
+    <integer name="hideAnimTime">150</integer>
+    <integer name="revealAnimTime">150</integer>
+    <integer name="rotateAnimTime">175</integer>
+    <string name="app_name">PulltorefreshListView</string>
+    <string name="loading">Loading…</string>
+    <string name="menu_refresh">Refresh Immediately!</string>
+    <string name="refresh_pull_down">Pull down to refresh…</string>
+    <string name="refresh_pull_up">Pull up to refresh…</string>
+    <string name="refresh_release">Release to refresh…</string>
+    <string name="title_activity_test">RefreshableListView Test Activity!</string>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+</resources>

@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.gzcc.CodingGarfield.shopping.Temporary.newdatabase;
+
 public class RegisterActivity extends AppCompatActivity {
     EditText user;
     EditText password;
@@ -77,7 +79,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     void back(View view){
-        Intent back=new Intent(RegisterActivity.this,MainActivity.class);
+        Intent back=new Intent(RegisterActivity.this,LoginIntoActivity.class);
         startActivity(back);
         this.finish();
     }

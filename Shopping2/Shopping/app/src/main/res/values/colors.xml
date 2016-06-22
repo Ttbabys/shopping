@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#ff4081</color>
+    <color name="color_Info">#0098ff</color>
+    <color name="color_Name">#ff4081</color>
     <color name="ThemeColor">#0098ff</color>
     <color name="mainBKcolor">#ffffff</color>
     <color name="ButtonColor">#ffffff</color>

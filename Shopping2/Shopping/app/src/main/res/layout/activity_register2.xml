@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:windowSoftInputMode="stateVisible|adjustPan"
     android:background="@drawable/loginbg"
     tools:context="com.gzcc.CodingGarfield.shopping.Register2Activity">
 
@@ -29,10 +30,10 @@
         android:layout_height="wrap_content"
         android:text="@string/Exit"
         android:id="@+id/businessexit"
-        android:layout_alignParentTop="true"
+        android:onClick="exit"
+        android:layout_alignTop="@+id/businesssave"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="exit"/>
+        android:layout_alignParentEnd="true" />
 
     <TextView         android:textColor="@color/TextColor"
         android:layout_width="wrap_content"
@@ -158,7 +159,7 @@
         android:id="@+id/businesssave"
         android:onClick="register"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

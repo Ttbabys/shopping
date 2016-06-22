@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.gzcc.CodingGarfield.shopping.Temporary.newdatabase;
+
 public class UpdateBusinessActivity extends Activity {
     TextView busname;
     TextView buspassword;

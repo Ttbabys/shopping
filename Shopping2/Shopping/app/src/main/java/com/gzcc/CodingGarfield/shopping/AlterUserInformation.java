@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gzcc.CodingGarfield.shopping.Temporary.newdatabase;
+
 public class AlterUserInformation extends Activity {
     TextView alterusername;
     EditText alteruserpassword;
@@ -53,7 +55,7 @@ public class AlterUserInformation extends Activity {
         alteruserback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent back=new Intent(AlterUserInformation.this,Main3Activity.class);
+                Intent back=new Intent(AlterUserInformation.this,MainShoppingActivity.class);
                 startActivity(back);
                 finish();
             }

@@ -1,148 +1,247 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    tools:context=".Tab3Fragment">
+    tools:context=".MainTab.Tab3Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="left|bottom">
-        <ImageView
-            android:id="@+id/imageID"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_above="@+id/textView21"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="18dp" />
+        android:layout_gravity="center">
 
-        <Button
-            android:textColor="@color/ThemeColor"
-            android:background="@color/ButtonColor"
-            android:id="@+id/btn_01"
-            android:layout_width="192dip"
-            android:layout_weight="1"
-            android:layout_height="50dip"
-            android:text="相册"
-            android:layout_alignBaseline="@+id/btn_02"
-            android:layout_alignBottom="@+id/btn_02"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:textColor="@color/ThemeColor"
-            android:background="@color/ButtonColor"
-            android:id="@+id/btn_02"
-            android:layout_width="192dip"
-            android:layout_height="50dip"
-            android:text="拍照"
-            android:layout_above="@+id/alteruserinformation"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
 
-        <TextView android:textColor="@color/ThemeColor"
-            android:textSize="17sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/alterUserName"
-            android:id="@+id/textView21"
-            android:layout_above="@+id/alteruserpassword"
-            android:layout_toLeftOf="@+id/alterusername"
-            android:layout_toStartOf="@+id/alterusername" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TextView
-            android:textSize="19sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
-            android:id="@+id/alterusername"
-            android:layout_alignTop="@+id/textView21"
-            android:layout_centerHorizontal="true" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:id="@+id/relativeLayout2">
 
-        <TextView android:textColor="@color/ThemeColor"
-            android:textSize="17sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/alterUserPW"
-            android:id="@+id/textView22"
-            android:layout_above="@+id/alterusernumber"
-            android:layout_toLeftOf="@+id/alterusername"
-            android:layout_toStartOf="@+id/alterusername" />
+                        <ImageView
+                            android:id="@+id/imageID"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/userimage"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp" />
 
-        <EditText android:textColor="@color/colorAccent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/alteruserpassword"
-            android:ems="10"
-            android:layout_alignBaseline="@+id/textView22"
-            android:layout_alignBottom="@+id/textView22"
-            android:layout_toRightOf="@+id/textView22"
-            android:layout_toEndOf="@+id/textView22"
-            android:inputType="none" />
+                    </RelativeLayout>
 
-        <TextView android:textColor="@color/ThemeColor"
-            android:textSize="17sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/alterUserPhone"
-            android:id="@+id/textView23"
-            android:layout_above="@+id/alteruseremail"
-            android:layout_toLeftOf="@+id/alteruserpassword"
-            android:layout_toStartOf="@+id/alteruserpassword" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/relativeLayout3"
+                        android:layout_weight="0.6">
 
-        <EditText android:textColor="@color/colorAccent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:ems="10"
-            android:id="@+id/alterusernumber"
-            android:layout_alignBaseline="@+id/textView23"
-            android:layout_alignBottom="@+id/textView23"
-            android:layout_alignLeft="@+id/alteruserpassword"
-            android:layout_alignStart="@+id/alteruserpassword" />
+                        <TableLayout
+                            android:layout_width="302dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp">
 
-        <TextView android:textColor="@color/ThemeColor"
-            android:textSize="17sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/alterUserMail"
-            android:id="@+id/textView24"
-            android:layout_marginBottom="11dp"
-            android:layout_above="@+id/btn_02"
-            android:layout_toLeftOf="@+id/alterusernumber"
-            android:layout_toStartOf="@+id/alterusernumber" />
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-        <EditText android:textColor="@color/colorAccent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/alteruseremail"
-            android:layout_alignBaseline="@+id/textView24"
-            android:layout_alignBottom="@+id/textView24"
-            android:layout_toRightOf="@+id/textView24"
-            android:layout_toEndOf="@+id/textView24" />
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
 
-        <Button
-            android:textColor="@color/ThemeColor"
-            android:background="@color/ButtonColor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/saveAlter"
-            android:id="@+id/alteruserinformation"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="15dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+                                    <TextView android:textColor="@color/ThemeColor"
+                                        android:textSize="17sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="@string/alterUserName"
+                                        android:id="@+id/textView21"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textSize="19sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Medium Text"
+                                        android:id="@+id/alterusername"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView android:textColor="@color/ThemeColor"
+                                        android:textSize="17sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="@string/alterUserPW"
+                                        android:id="@+id/textView22"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+
+                                <EditText android:textColor="@color/colorAccent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/alteruserpassword"
+                                    android:ems="8"
+                                    android:textAlignment="center"
+                                    android:inputType="none"
+                                    android:layout_column="1" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView android:textColor="@color/ThemeColor"
+                                        android:textSize="17sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="@string/alterUserPhone"
+                                        android:id="@+id/textView23"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+                                </RelativeLayout>
+
+                                <EditText android:textColor="@color/colorAccent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="phone"
+                                    android:textAlignment="center"
+                                    android:ems="8"
+                                    android:id="@+id/alterusernumber"
+                                    android:layout_column="1" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView android:textColor="@color/ThemeColor"
+                                        android:textSize="17sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="@string/alterUserMail"
+                                        android:id="@+id/textView24"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+
+                                <EditText android:textColor="@color/colorAccent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textEmailAddress"
+                                    android:ems="8"
+                                    android:textAlignment="center"
+                                    android:id="@+id/alteruseremail"
+                                    android:layout_column="1" />
+
+                            </TableRow>
+
+                        </TableLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:id="@+id/relativeLayout">
+
+                        <Button
+                            android:textColor="@color/ThemeColor"
+                            android:background="@color/ButtonColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:text="@string/saveAlter"
+                            android:id="@+id/alteruserinformation"
+                            android:layout_below="@+id/btn01"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="bottom"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:textColor="@color/ThemeColor"
+                            android:background="@color/ButtonColor"
+                            android:id="@+id/btn01"
+                            android:layout_width="0dp"
+                            android:layout_height="30dip"
+                            android:text="@string/GetPhoto"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0.5" />
+
+                        <Button
+                            android:textColor="@color/ThemeColor"
+                            android:background="@color/ButtonColor"
+                            android:id="@+id/btn02"
+                            android:layout_width="0dip"
+                            android:layout_height="30dip"
+                            android:text="@string/TakePhoto"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/btn01"
+                            android:layout_toStartOf="@+id/btn01"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
 
     </RelativeLayout>
 </FrameLayout>

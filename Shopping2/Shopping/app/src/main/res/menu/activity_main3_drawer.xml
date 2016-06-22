@@ -3,21 +3,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="拍照上传" />
+            android:id="@+id/nav_usermenu"
+            android:icon="@drawable/ic_drawer"
+            android:title="选单" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="查看更多" />
+            android:id="@+id/nav_sql"
+            android:icon="@drawable/ic_menu_send"
+            android:title="注销" />
 
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_set"
             android:icon="@drawable/ic_menu_manage"
             android:title="设置" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="其他">
         <menu>
             <item
                 android:id="@+id/nav_share"

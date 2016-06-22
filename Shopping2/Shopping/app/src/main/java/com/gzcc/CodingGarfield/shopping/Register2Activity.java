@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.gzcc.CodingGarfield.shopping.Temporary.newdatabase;
+
 public class Register2Activity extends AppCompatActivity {
     EditText businessname;
     EditText businesspassword;
@@ -28,7 +30,7 @@ public class Register2Activity extends AppCompatActivity {
     }
 
     void back(View view){
-        Intent intent=new Intent(this,MainActivity.class);
+        Intent intent=new Intent(this,LoginIntoActivity.class);
         startActivity(intent);
         this.finish();
     }

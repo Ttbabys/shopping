@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gzcc.CodingGarfield.shopping.Temporary.newdatabase;
+
 public class AlterBusinessInformation extends Activity {
     TextView alterbusinessrname;
     EditText alterbusinesspassword;

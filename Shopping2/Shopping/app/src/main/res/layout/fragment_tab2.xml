@@ -2,14 +2,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tab2Fragment">
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainTab.Tab2Fragment">
 
     <!-- TODO: Update blank fragment layout -->
 
 
-    <SearchView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchView"
-        android:layout_gravity="right|top" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:layout_gravity="left|top"
+            android:commitIcon="@android:drawable/ic_menu_send"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="19dp" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/PullFresh2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1px"
+            android:divider="#ff000000"
+            android:background="#ffffffff"
+            ptr:ptrAnimationStyle="flip"
+            android:textColor="@color/ThemeColor"
+            android:layout_below="@+id/searchView">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    </RelativeLayout>
 </FrameLayout>
